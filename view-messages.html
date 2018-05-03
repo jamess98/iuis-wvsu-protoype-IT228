@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Message | Student Access Module</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/messages.css">
+    <link rel="icon" href="images/wvsu-icon-1.ico">
+</head>
+
+<body id="index">
+    <div class="">
+        <nav class="navbar fixed-top navbar-dark d-flex align-items-center p-3 mb-3 text-white bg-header box-shadow">
+            <div class="">
+                <img class="mr-3" src="./images/wvsu-logo.png" alt="" width="48" height="48">
+            </div>
+            <div class="">
+                <div class="lh-100 text-center">
+                    <h6 class="mb-0 text-white lh-100">Messages</h6>
+                    <small></small>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarsExample01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Profile
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./messages.html">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./grades.html">Grades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Assesment</a>
+                    </li>
+                    <li>
+                        <a href="./login.html" type="button" class="form-control btn btn-danger btn-sm">
+                            Log Out
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4" style="height:100%;">
+                <div class="navbar d-flex align-items-center btn-group text-center mb-3 p-3 bg-primary rounded box-shadow">
+                    <button class="navbar-toggler col-md-12" type="form-control dropdown-toggle" data-toggle="collapse" data-target="#navbarsExample02"
+                        aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="form-control btn btn-lg btn-primary dropdown-toggle">Messages</span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-text-white" id="navbarsExample02">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-item" href="./messages.html">Inbox</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sent</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Draft</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trash</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View Message -->
+            <div class="col-md-8">
+                <div class="mb-3 bg-white rounded box-shadow">
+                    <div class="container">
+                        <div class="p-3">
+                            <!-- Star form compose mail -->
+                            <form class="col-12">
+                                <div class="">
+                                    <div class="panel-heading">
+                                        <div class="pull-left">
+                                            <a href="./messages.html" class="panel-title">
+                                                << Back</a>
+                                                    <h3 class="panel-title">View Message</h3>
+                                        </div>
+                                        <hr>
+                                        <div class="panel-sub-heading inner-all">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-7">
+                                                    <img data-src="holder.js/32x32?theme=thumb&amp;bg=007bff&amp;fg=007bff&amp;size=1" alt="32x32" class="mr-2 rounded" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_161b44dd7c4%20text%20%7B%20fill%3A%23007bff%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_161b44dd7c4%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23007bff%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2211.6796875%22%20y%3D%2217.0875%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                                        data-holder-rendered="true">
+                                                    <span>@username</span>
+                                                    to
+                                                    <strong>me</strong>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-5">
+                                                    <p class="pull-right">10:15AM | 02 FEB 2014</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="btn-group-vertical col-12">
+                                            <button type="button" class="btn btn-success btn-lg btn-block">Reply</button>
+                                            <button type="button" class="btn btn-dark btn-lg btn-block">Forward</button>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <!-- /.panel-heading -->
+                                    <div class="panel-sub-heading inner-all">
+                                        <div class="pull-left">
+                                            <h3 class="lead no-margin">Lorem Ipsum</h3>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <!-- /.panel-sub-heading -->
+
+                                    <!-- /.panel-sub-heading -->
+                                    <div class="panel-body">
+                                        <div class="view-mail">
+                                            <p>
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                                containing Lorem Ipsum passages, and more recently with desktop publishing
+                                                software like Aldus PageMaker including versions of Lorem Ipsum.
+                                            </p>
+                                            <p>
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                                The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                                                of letters, as opposed to using 'Content here, content here', making it look
+                                                like readable English. Many desktop publishing packages and web page editors
+                                                now use Lorem Ipsum as their default model text, and a search for 'lorem
+                                                ipsum' will uncover many web sites still in their infancy. Various versions
+                                                have evolved over the years, sometimes by accident, sometimes on purpose
+                                                (injected humour and the like).
+                                            </p>
+                                            <p>
+                                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+                                                from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor
+                                                at Hampden-Sydney College in Virginia, looked up one of the more obscure
+                                                Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+                                                cites of the word in classical literature, discovered the undoubtable source.
+                                                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
+                                                et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                                                This book is a treatise on the theory of ethics, very popular during the
+                                                Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                                                comes from a line in section 1.10.32.
+                                            </p>
+                                        </div>
+                                        <!-- /.view-mail -->
+                                        <div class="attachment-mail">
+                                            <p>
+                                                <span>
+                                                    <i class="fa fa-paperclip"></i> 3 attachments — </span>
+                                                <a href="#">Download all attachments</a>
+                                                |
+                                                <a href="#">View all images</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a class="atch-thumb" href="#" data-toggle="modal" data-target=".bs-example-modal-photo1">
+                                                        <img src="https://lorempixel.com/200/200/nature/5/" alt="...">
+                                                    </a>
+
+                                                    <a class="name" href="#">
+                                                        IMG_001.jpg
+                                                        <span>20KB</span>
+                                                    </a>
+
+                                                    <div class="links">
+                                                        <a href="#" data-toggle="modal" data-target=".bs-example-modal-photo1">View</a> -
+                                                        <a href="#">Download</a>
+                                                    </div>
+
+                                                </li>
+
+                                                <li>
+                                                    <a class="atch-thumb" href="#" data-toggle="modal" data-target=".bs-example-modal-photo2">
+                                                        <img src="https://lorempixel.com/200/200/nature/6/" alt="...">
+                                                    </a>
+
+                                                    <a class="name" href="#">
+                                                        IMG_002.jpg
+                                                        <span>15KB</span>
+                                                    </a>
+
+                                                    <div class="links">
+                                                        <a href="#" data-toggle="modal" data-target=".bs-example-modal-photo2">View</a> -
+                                                        <a href="#">Download</a>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <a class="atch-thumb" href="#" data-toggle="modal" data-target=".bs-example-modal-photo3">
+                                                        <img src="https://lorempixel.com/200/200/nature/7/" alt="...">
+                                                    </a>
+
+                                                    <a class="name" href="#">
+                                                        IMG_003.jpg
+                                                        <span>13KB</span>
+                                                    </a>
+
+                                                    <div class="links" data-toggle="modal" data-target=".bs-example-modal-photo3">
+                                                        <a href="#">View</a> -
+                                                        <a href="">Download</a>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <!-- /.attachment mail -->
+                                    </div>
+                                    <!-- /.panel-body -->
+                                    <div class="btn-group-vertical col-12">
+                                        <button type="button" class="btn btn-success btn-lg btn-block">Reply</button>
+                                        <button type="button" class="btn btn-dark btn-lg btn-block">Forward</button>
+                                    </div>
+                                    <!-- /.panel-footer -->
+                                </div>
+                                <!-- /.panel -->
+                            </form>
+                            <!--/ End form compose mail -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Scripts -->
+    <script src="./js/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./js/popper.min.js.download"></script>
+    <script src="./js/bootstrap.min.js.download"></script>
+</body>
+
+</html>
