@@ -1,0 +1,161 @@
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent scroll on narrow devices */
+}
+
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 56px;
+        /* Height of navbar */
+        bottom: 0;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        background-color: var(--gray-dark);
+        transition: -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    .offcanvas-collapse.open {
+        -webkit-transform: translateX(-1rem);
+        transform: translateX(-1rem);
+        /* Account for horizontal padding on navbar */
+    }
+}
+
+main {
+    padding-top: 6em;
+}
+
+#index {
+    background-image: url(../images/bg-login-landscape-2.jpg);
+    /* background-color: rgba(255, 255, 255, .9) */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.nav-text-white a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    color: var(--secondary);
+}
+
+.nav-underline .nav-link:hover {
+    color: var(--blue);
+}
+
+.nav-underline .active {
+    font-weight: 500;
+    color: var(--gray-dark);
+}
+
+.bg-header {
+    background-color: rgba(43, 127, 236, 0.85);
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.lh-100 {
+    line-height: 1;
+}
+
+.lh-125 {
+    line-height: 1.25;
+}
+
+.lh-150 {
+    line-height: 1.5;
+}
+
+/* footer */
+footer {
+    color: #e9ecef;
+}
+
+/* Responsive Breakpoints */
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .nav-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .nav-rounded {
+        border-radius: 0.25rem !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .nav-container {
+        max-width: 720px;
+        
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .nav-container {
+        max-width: 960px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .nav-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        max-width: 1140px;
+    }
+}
